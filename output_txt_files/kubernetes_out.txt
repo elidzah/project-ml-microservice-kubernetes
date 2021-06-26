@@ -1,10 +1,19 @@
-<paste log output from Kubernetes-mediated prediction, here>
-(.devops) [ec2-user@ip-172-31-42-181 project-ml-microservice-kubernetes]$ ./make_prediction.sh
-Port: 30602
+[ec2-user@ip-172-31-42-181 project-ml-microservice-kubernetes]$ ./run_kubernetes.sh
+deployment.apps/eli-deploy created
+NAME                          READY   STATUS              RESTARTS   AGE
+eli-deploy-6bbf54dcbd-wj9zk   0/1     ContainerCreating   0          0s
+service/eli-deploy exposed
+[ec2-user@ip-172-31-42-181 project-ml-microservice-kubernetes]$
+[ec2-user@ip-172-31-42-181 project-ml-microservice-kubernetes]$ kubectl get pods
+NAME                          READY   STATUS    RESTARTS   AGE
+eli-deploy-6bbf54dcbd-wj9zk   1/1     Running   0          74s
+[ec2-user@ip-172-31-42-181 project-ml-microservice-kubernetes]$
+[ec2-user@ip-172-31-42-181 project-ml-microservice-kubernetes]$
+[ec2-user@ip-172-31-42-181 project-ml-microservice-kubernetes]$ ./make_prediction.sh
+Port: 32176
 {
   "prediction": [
     20.35373177134412
   ]
 }
-(.devops) [ec2-user@ip-172-31-42-181 project-ml-microservice-kubernetes]$
-
+[ec2-user@ip-172-31-42-181 project-ml-microservice-kubernetes]$
