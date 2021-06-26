@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/elidzah/udaproject.svg?style=shield&circle-token=b9826954f356b6952f0bc3e75b7e8645171b7f42)](<LINK>)
+[![CircleCI](https://circleci.com/gh/elidzah/project-ml-microservice-kubernetes.svg?style=shield&circle-token=b9826954f356b6952f0bc3e75b7e8645171b7f42)](https://circleci.com/gh/elidzah/project-ml-microservice-kubernetes)
 
 ## Project Overview
 
